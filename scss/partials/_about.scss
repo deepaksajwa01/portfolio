@@ -1,0 +1,40 @@
+/* .container{
+  width: 100%;
+  margin: auto;
+  background: lightgreen;
+
+} */
+
+.about-me{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+
+
+
+
+.about-img{
+  grid-area: img;
+
+}
+
+.about-title{
+  grid-area: title;
+  grid-column: 2/3;
+  grid-row: 2/3;
+
+
+}
+
+.about-subtitle{
+  grid-area: subtitle;
+
+}
+
+.about-text{
+  grid-area:ttxt;
+
+}
+
+}

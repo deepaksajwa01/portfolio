@@ -1,0 +1,84 @@
+.portfolio{
+  text-align: center;
+  background: $light-gray;
+  padding: 3em ;
+  @media screen and (max-width: 1000px) {
+    padding: 2rem;
+  }
+  @media screen and (max-width: 800px) {
+    padding: 1.5rem;
+  }
+  @media screen and (max-width: 550px) {
+    padding: 1rem;
+  }
+}
+
+.portfolio-items{
+  cursor: pointer;
+  margin:  0 auto ;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.portfolio-item{
+position: relative;
+  overflow: hidden;
+ flex-shrink: 1;
+ flex-shrink: 1;
+ width: 33.3333%;
+
+   @media screen and (max-width:750px) {
+    width: 50%;
+
+
+  }
+
+  img{
+    display: block;
+    max-width: 100%;
+  }
+  &:hover figcaption , .portfolio-item,
+  &:focus figcaption{
+    top: 0;
+
+  }
+}
+
+.portfolio-item figcaption{
+ position: absolute;
+ background:rgba($accent , .75);
+ top:100%;
+ bottom: 0;
+ right: 0;
+ left: 0;
+ color: $white;
+ text-align: left;
+ display: flex;
+ flex-direction: column;
+ padding: 1em;
+ transition: top ease-in-out 250ms;
+}
+
+.portfolio-title{
+  color: $white;
+  font-size: 3.625rem;
+  margin-bottom: auto;
+}
+
+.portfolio-link{
+  color: $white;
+  font-weight: $fw-b;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-bottom: 2px solid $white;
+  align-self: flex-start;
+
+  &::after{
+    content:url(../img/arrow-white.svg);
+    display:inline-block;
+    height: .8em;
+    width: .8em;
+    margin-left: .5em;
+  }
+}
